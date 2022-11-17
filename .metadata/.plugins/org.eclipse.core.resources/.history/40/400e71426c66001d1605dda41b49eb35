@@ -9,9 +9,8 @@ public class p20
 		
 		car1.num = 1234;
 		car1.gas = -10;
+		
 		car1.show();
-		
-		
 		
 	}
 }
