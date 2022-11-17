@@ -1,0 +1,54 @@
+package hw3;
+
+public class p31
+{
+	public static void main(String[] args)
+	{
+		Carp31.showSum();
+		
+		Carp31 car1;
+		car1 = new Carp31();
+		car1.show();
+		
+		Carp31 car2;
+		car2 = new Carp31(1234, 25.0);
+		car2.show();
+		
+	}
+}
+
+class Carp31
+{
+	public static int sum = 0;
+	private int num;
+	private double gas;
+	
+	public Carp31()
+	{
+		num = 0;
+		gas = 0.0;
+		sum ++;
+		System.out.println("produce the car");
+	}
+	
+	public Carp31(int n, double g)
+	{
+		this();
+		num = n;
+		gas = g;
+		System.out.println("produce the carwhich car number is " + n + ",volume of gas is " + g);
+	}
+	
+	public static void showSum()
+	{
+		System.out.println("total" + sum + "car(s)");
+	}
+	
+	
+	void show()
+	{
+		System.out.println("Car number is " + this.num);
+		System.out.println("volume of gas is " + this.gas);
+	}
+}
+
