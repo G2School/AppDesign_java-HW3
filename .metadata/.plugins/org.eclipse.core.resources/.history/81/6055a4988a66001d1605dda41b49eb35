@@ -1,0 +1,26 @@
+package hw3;
+import java.io.*;
+
+public class p40 
+{
+	public static void main(String[] args) throws IOException
+	{
+		System.out.println("insert a string");
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		
+		String str = br.readLine();
+		
+		System.out.println("insert a string you want to add ");
+		
+		String str2 = br.readLine();
+		
+		StringBuffer sb = new StringBuffer(str);
+		sb.append(str2);
+		
+
+			System.out.println("在[" + str + "]後新增[" + str2 + "]，就變成 : " sb);
+
+	}
+
+}
