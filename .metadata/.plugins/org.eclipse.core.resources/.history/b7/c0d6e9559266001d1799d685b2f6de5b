@@ -2,10 +2,10 @@ package hw3;
 
 public class p47 
 {
-	public static void main (String[] args)
+	public static void main (String args)
 	{
-		Carp47 car1;
-		car1 = new Carp47();
+		Carp45 car1;
+		car1 = new Carp45();
 		car1.show();
 		
 		int number = 1234;
@@ -14,7 +14,7 @@ public class p47
 		
 		car1.setCar(number, gas);
 		car1.setName(str);
-				
+		
 		car1.show();
 	
 	}
@@ -38,7 +38,7 @@ class Carp47
 	{
 		num = n;
 		gas = g;
-		System.out.println("車號設為 " + num + "汽油量設為" + gas);
+		System.out.println("車號設為 " + n + "汽油量設為" + gas);
 	}
 	
 	public void setName(String nm)
